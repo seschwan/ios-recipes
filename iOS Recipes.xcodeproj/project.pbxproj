@@ -8,24 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		B3DE9B082294FC39008A40B5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DE9B072294FC39008A40B5 /* AppDelegate.swift */; };
-		B3DE9B0A2294FC39008A40B5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DE9B092294FC39008A40B5 /* ViewController.swift */; };
+		B3DE9B0A2294FC39008A40B5 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DE9B092294FC39008A40B5 /* MainViewController.swift */; };
 		B3DE9B0D2294FC39008A40B5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3DE9B0B2294FC39008A40B5 /* Main.storyboard */; };
 		B3DE9B0F2294FC39008A40B5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3DE9B0E2294FC39008A40B5 /* Assets.xcassets */; };
 		B3DE9B122294FC39008A40B5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3DE9B102294FC39008A40B5 /* LaunchScreen.storyboard */; };
 		B3DE9B1F2294FDB7008A40B5 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DE9B1E2294FDB7008A40B5 /* Recipe.swift */; };
 		B3DE9B222294FE98008A40B5 /* RecipesNetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DE9B212294FE98008A40B5 /* RecipesNetworkClient.swift */; };
+		B3DE9B242296024B008A40B5 /* RecipiesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DE9B232296024B008A40B5 /* RecipiesTableViewController.swift */; };
+		B3DE9B26229604CE008A40B5 /* RecipeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DE9B25229604CE008A40B5 /* RecipeDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B3DE9B042294FC39008A40B5 /* iOS Recipes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS Recipes.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3DE9B072294FC39008A40B5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B3DE9B092294FC39008A40B5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B3DE9B092294FC39008A40B5 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		B3DE9B0C2294FC39008A40B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B3DE9B0E2294FC39008A40B5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B3DE9B112294FC39008A40B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B3DE9B132294FC39008A40B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B3DE9B1E2294FDB7008A40B5 /* Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
 		B3DE9B212294FE98008A40B5 /* RecipesNetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesNetworkClient.swift; sourceTree = "<group>"; };
+		B3DE9B232296024B008A40B5 /* RecipiesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipiesTableViewController.swift; sourceTree = "<group>"; };
+		B3DE9B25229604CE008A40B5 /* RecipeDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,7 +93,9 @@
 		B3DE9B1B2294FD6C008A40B5 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				B3DE9B092294FC39008A40B5 /* ViewController.swift */,
+				B3DE9B092294FC39008A40B5 /* MainViewController.swift */,
+				B3DE9B232296024B008A40B5 /* RecipiesTableViewController.swift */,
+				B3DE9B25229604CE008A40B5 /* RecipeDetailViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -189,9 +195,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3DE9B242296024B008A40B5 /* RecipiesTableViewController.swift in Sources */,
 				B3DE9B1F2294FDB7008A40B5 /* Recipe.swift in Sources */,
 				B3DE9B222294FE98008A40B5 /* RecipesNetworkClient.swift in Sources */,
-				B3DE9B0A2294FC39008A40B5 /* ViewController.swift in Sources */,
+				B3DE9B0A2294FC39008A40B5 /* MainViewController.swift in Sources */,
+				B3DE9B26229604CE008A40B5 /* RecipeDetailViewController.swift in Sources */,
 				B3DE9B082294FC39008A40B5 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -340,7 +348,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SBB8C9E36E;
-				INFOPLIST_FILE = "iOS Recipes/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -358,7 +366,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SBB8C9E36E;
-				INFOPLIST_FILE = "iOS Recipes/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
