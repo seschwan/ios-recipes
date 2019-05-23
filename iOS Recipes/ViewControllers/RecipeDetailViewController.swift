@@ -31,10 +31,12 @@ class RecipeDetailViewController: UIViewController {
     
     
     func updateViews() {
-        if self.isViewLoaded {
-            recipeLbl.text = recipe?.name
-            recipeDetailView.text = recipe?.instructions
+        guard let recipe = recipe, isViewLoaded else {
+            return
         }
+        recipeLbl.text = recipe.name
+        recipeDetailView.text = recipe.instructions
+        print("Recipe Name: \(recipe.name)\n Recipe Label: \(recipeLbl.text)")
         
     }
 
